@@ -1,0 +1,15 @@
+server:
+  address: 0.0.0.0
+  port: 9999
+
+spring:
+  application:
+    name: 9isuper-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Jimmy3389/9isuper-cloud
+          searchPaths: 9isuper-config-repo
+          username: Jimmy3389
+          password: 456123pei
