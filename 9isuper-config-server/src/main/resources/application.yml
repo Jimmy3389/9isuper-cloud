@@ -9,7 +9,28 @@ spring:
     config:
       server:
         git:
+          clone-on-start: true 
           uri: https://github.com/Jimmy3389/9isuper-cloud
           searchPaths: 9isuper-config-repo
           username: Jimmy3389
           password: 456123pei
+encrypt:
+  key: Jimmy9isuper
+endpoints:
+  actuator:
+    path: /endpoints/actuator
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://admin:administrator@172.31.32.5:9999/eureka,http://admin:administrator@172.31.32.22:9999/eureka
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 4000
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: administrator
