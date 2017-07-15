@@ -12,8 +12,6 @@ spring:
           clone-on-start: true 
           uri: https://github.com/Jimmy3389/9isuper-cloud
           searchPaths: 9isuper-config-repo
-          username: Jimmy3389
-          password: 456123pei
 encrypt:
   key: Jimmy9isuper
 endpoints:
