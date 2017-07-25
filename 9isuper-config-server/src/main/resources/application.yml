@@ -13,7 +13,7 @@ spring:
           uri: https://github.com/Jimmy3389/9isuper-cloud
           searchPaths: 9isuper-config-repo
   rabbitmq:
-    host: 172.31.32.5
+    host: rabbitmq.9isuper.com
     port: 5672
     username: root
     password: rootroot
