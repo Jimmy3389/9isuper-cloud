@@ -24,11 +24,14 @@ endpoints:
   actuator:
     path: /endpoints/actuator
 eureka:
+  instance:
+    secure-port: 443
+    secure-port-enabled: true
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: https://admin:administrator@cloud.9isuper.com/eureka,https://cloud2.9isuper.com:8889/eureka
+      defaultZone: http://admin:administrator@cloud.9isuper.com/eureka,http://cloud2.9isuper.com:8889/eureka
   server:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 4000
