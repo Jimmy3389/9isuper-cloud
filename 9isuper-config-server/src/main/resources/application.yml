@@ -1,6 +1,6 @@
 server:
   address: 0.0.0.0
-  port: 9999
+  port: 8889
 
 spring:
   application:
@@ -27,7 +27,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://admin:administrator@172.31.32.5:9999/eureka,http://admin:administrator@172.31.32.22:9999/eureka
+      defaultZone: http://admin:administrator@172.31.32.5:8889/eureka,http://admin:administrator@172.31.32.22:8889/eureka
   server:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 4000
