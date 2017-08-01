@@ -28,7 +28,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://admin:administrator@120.92.82.208:8889/eureka,http://admin:administrator@120.92.51.39:8889/eureka
+      defaultZone: https://admin:administrator@cloud.9isuper.com/eureka,https://cloud2.9isuper.com:8889/eureka
   server:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 4000
