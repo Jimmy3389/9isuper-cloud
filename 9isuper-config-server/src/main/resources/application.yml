@@ -21,7 +21,7 @@ spring:
 encrypt:
   key: Jimmy9isuper
 endpoints:
-  actuator:
+  actuator: 
     path: /endpoints/actuator
 eureka:
   instance:
@@ -31,7 +31,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://admin:administrator@cloud.9isuper.com/eureka,http://cloud2.9isuper.com:8889/eureka
+      defaultZone: http://admin:administrator@cloud.9isuper.com/eureka,http://admin:administrator@cloud2.9isuper.com/eureka
   server:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 4000
