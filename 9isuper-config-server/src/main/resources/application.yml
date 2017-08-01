@@ -8,7 +8,8 @@ spring:
   cloud:
     config:
       server:
-        git:
+        prefix: /cloud/
+        git: 
           clone-on-start: true 
           uri: https://github.com/Jimmy3389/9isuper-cloud
           searchPaths: 9isuper-config-repo
