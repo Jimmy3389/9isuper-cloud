@@ -106,7 +106,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>com.isuper.cloud.config.Application</mainClass>
+					<mainClass>com.isuper.cloud.Application</mainClass>
 				</configuration>
 			</plugin>
 			<plugin>
