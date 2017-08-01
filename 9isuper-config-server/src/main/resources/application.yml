@@ -28,7 +28,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://admin:administrator@172.31.32.5:8889/eureka,http://admin:administrator@172.31.32.22:8889/eureka
+      defaultZone: http://admin:administrator@120.92.82.208:8889/eureka,http://admin:administrator@120.92.51.39:8889/eureka
   server:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 4000
