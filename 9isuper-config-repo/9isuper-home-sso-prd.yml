@@ -1,0 +1,35 @@
+profile: production-1.0
+spring: 
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://mysql.9isuper.com:3306/home?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: rootroot
+    initial-size: 10
+    min-idle: 10
+    max-active: 50
+    max-wait: 60000
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 300000
+    validation-query: SELECT 'x' FROM DUAL
+    test-while-idle: true
+    test-on-borrow: false
+    test-on-return: false
+    pool-prepared-statements: true
+    driver-class-name: com.mysql.jdbc.Driver
+  aop:
+    auto: true
+    proxy-target-class: true
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: false
+    open-in-view: true
+    properties:
+      hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+    hibernate:
+      ddl-auto: none
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    mode: HTML5
