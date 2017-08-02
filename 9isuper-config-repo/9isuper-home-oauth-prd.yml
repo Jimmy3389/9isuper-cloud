@@ -33,9 +33,7 @@ spring:
     cache: false
     encoding: UTF-8
     mode: HTML5
-security:
-  user:
-    password: password
+security: 
   oauth2:
     client:
       client-id: demo
