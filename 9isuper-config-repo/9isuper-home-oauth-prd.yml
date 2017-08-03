@@ -28,8 +28,17 @@ spring:
     properties:
       hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
   thymeleaf:
     cache: false
     encoding: UTF-8
     mode: HTML5
+security: 
+  oauth2:
+    client:
+      client-id: demo
+      client-secret: demo
+      scope: read, write
+      auto-approve-scopes: .*
+    authorization:
+      check-token-access: permitAll()
