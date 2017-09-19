@@ -33,3 +33,13 @@ spring:
     cache: false
     encoding: UTF-8
     mode: HTML5
+  redis:
+    database: 2
+    host: redis.9isuper.com
+    password: redis
+    port: 6379
+    pool: 
+      max-idle: 50
+      max-wait: 5000
+      max-active: 200 
+   
