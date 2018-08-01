@@ -1,1 +1,2 @@
 language: java
+./9isuper-config-server/mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
