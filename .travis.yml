@@ -1,6 +1,1 @@
 language: java
-mvn sonar:sonar \
-  -Dsonar.organization=jimmy3389-github \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=8fe9fa081fad6ede1042e9cadd86f62923c4ac6c 
-mvn clean install 
